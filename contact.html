@@ -4,49 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BP's Contact Info</title>
+    <title>Bijan Parvin's Portfolio</title>
 
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+    <header id="masthead">
+        <div class="container"> 
+            <a href="index.html" id="logo">Bijan Parvin</a>
+            
+            <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <!--Header is the same for all three pages-->
-    <nav>
-        <section id="name">
-            Bijan Parvin
-        </section>
-        <section id="tabs1">
-            <a href="index.html">About</a>
-        </section>
-        <section id="tabs2">
-            <a href="portfolio.html">Portfolio</a>
-        </section>
-        <section id="tabs3">
-            <a href="contact.html">Contact</a>
-        </section>
-    </nav>
     <br>
 
-<!--Main box with contact info-->
-    <section id="bigbox">
-        <div id="aboutme">
-            Contact
-        </div>
-        <form>
-            Name:
-            <br>
-            <input id="inputname" type="text" name="Name">
-            <br>
-            Email:
-            <br>
-            <input id="inputemail" name="text" name="Email">
-            <br>
-            Message:
-            <br>
-            <textarea id="comment" type="text"></textarea>
-            <br>
-            <input type="submit" name="Submit">
+<div id="main-container" class="container">
+    <section class="main-container">
+        <h1>Contact</h1>
+
+        <form id="contact-form">
+            <ul>
+                <li>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="John Smith" required="required">
+                </li>
+                <li>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" placeholder="email@gmail.com" required="required">
+                </li>
+                <li>
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message" required="required"></textarea>
+                </li>
+            </ul>
+            <input type="submit" name="submit">
+
         </form>
     </section>
 
